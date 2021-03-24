@@ -104,7 +104,7 @@ document.cookie = 'kex=1';
 <button class="btn btn-main" onmouseover="fancontrol()" onmouseout="pagetitle()" onclick=load_fanCtr()> Fan Control </button>
 <br>
 <button class="btn btn-main" onmouseover="GtaV()" onmouseout="pagetitle()" onclick=load_GtaV()> GTA-V Mod </button>&nbsp
-<button class="btn btn-main" onmouseover="Mode()" onmouseout="pagetitle()" onclick=load_Mode()> Mode </button>&nbsp
+<button class="btn btn-main" onmouseover="DumperGame()" onmouseout="pagetitle()" onclick=load_DumperGame()> Dumper Games </button>&nbsp
 <button class="btn btn-main" onmouseover="webrte()" onmouseout="pagetitle()" onclick=load_webrte()> WebRTE </button>
 <button class="btn btn-web" onmouseover="ps4trainer()" onmouseout="pagetitle()" onclick=load_ps4trainer()> PS4 Trainer Web </button>&nbsp
 <br>
@@ -177,8 +177,8 @@ function GtaV(){
 document.getElementById("msgs").innerHTML = "GTA V Mode for All Firmwares 7.5x";
 }
 
-function Mode(){
-document.getElementById("msgs").innerHTML = "PS4 Mode";
+function DumperGame(){
+document.getElementById("msgs").innerHTML = "Dump Games to a USB drive to be able to create fpkg files";
 }
 
 function webrte(){
@@ -334,11 +334,11 @@ function load_GtaV(){
         link.href = 'gta-v.html';
         link.click();
 }
-function load_Mode(){
+function load_DumperGame(){
 
   var link = document.createElement('a');
         document.body.appendChild(link);
-        link.href = 'Mode.html';
+        link.href = 'payload.html#f=dumpergame.js';
         link.click();
 }
 function load_webrte(){
