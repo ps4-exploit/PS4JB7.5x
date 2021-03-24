@@ -104,9 +104,9 @@ document.cookie = 'kex=1';
 <button class="btn btn-main" onmouseover="fancontrol()" onmouseout="pagetitle()" onclick=load_fanCtr()> Fan Control </button>
 <br>
 <button class="btn btn-main" onmouseover="GtaV()" onmouseout="pagetitle()" onclick=load_GtaV()> GTA-V Mod </button>&nbsp
-<button class="btn btn-main" onmouseover="DumperGame()" onmouseout="pagetitle()" onclick=load_DumperGame()> Dumper Games </button>&nbsp
 <button class="btn btn-main" onmouseover="webrte()" onmouseout="pagetitle()" onclick=load_webrte()> WebRTE </button>
 <button class="btn btn-web" onmouseover="ps4trainer()" onmouseout="pagetitle()" onclick=load_ps4trainer()> PS4 Trainer Web </button>&nbsp
+<button class="btn btn-main" onmouseover="News()" onmouseout="pagetitle()" onclick=load_News()> PS4 News </button>&nbsp
 <br>
 </div>
 <script>
@@ -176,16 +176,14 @@ document.getElementById("msgs").innerHTML = "Status";
 function GtaV(){
 document.getElementById("msgs").innerHTML = "GTA V Mode for All Firmwares 7.5x";
 }
-
-function DumperGame(){
-document.getElementById("msgs").innerHTML = "Dump Games to a USB drive to be able to create fpkg files";
-}
-
 function webrte(){
 document.getElementById("msgs").innerHTML = "Required to Activate Cheats Through the PS4 Trainer Website";
 }
 function ps4trainer(){
 document.getElementById("msgs").innerHTML = "PS4 Trainer Website (Follow Instructions There)";
+}
+function News(){
+document.getElementById("msgs").innerHTML = "PS4 News";
 }
 function load_goldhen(){
 
@@ -334,13 +332,6 @@ function load_GtaV(){
         link.href = 'gta-v.html';
         link.click();
 }
-function load_DumperGame(){
-
-  var link = document.createElement('a');
-        document.body.appendChild(link);
-        link.href = 'payload.html#f=dumpergame.js';
-        link.click();
-}
 function load_webrte(){
 
   var link = document.createElement('a');
@@ -353,6 +344,13 @@ function load_ps4trainer(){
   var link = document.createElement('a');
         document.body.appendChild(link);
         link.href = 'http://ps4trainer.com/Trainer/index.html';
+        link.click();
+}
+function load_News(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'index.html';
         link.click();
 }
 </script>
